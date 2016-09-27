@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.views.EmployeeStartViewController">
+   <children>
+      <Label layoutX="175.0" layoutY="99.0" prefHeight="21.0" prefWidth="252.0" text="Welcome to the Car workshop!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnGoToCustomerView" layoutX="87.0" layoutY="288.0" mnemonicParsing="false" onAction="#goToCustomerView" text="Go to customers view" />
+      <Button fx:id="btnGoToCarView" layoutX="252.0" layoutY="288.0" mnemonicParsing="false" onAction="#goToCarView" text="Go to cars view" />
+      <Button fx:id="btnGoToServiceView" layoutX="383.0" layoutY="288.0" mnemonicParsing="false" onAction="#goToServiceView" text="Go to services view" />
+      <Button fx:id="btnGoToStatisticsView" layoutX="189.0" layoutY="409.0" mnemonicParsing="false" onAction="#goToStatisticsView" prefHeight="25.0" prefWidth="224.0" text="Show statistics" />
+   </children>
+</AnchorPane>

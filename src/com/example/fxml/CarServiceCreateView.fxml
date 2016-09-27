@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.views.CarServiceCreateViewController">
+   <children>
+      <ListView fx:id="lvCarListView" layoutX="359.0" prefHeight="500.0" prefWidth="210.0" />
+      <TextField fx:id="tfPrice" layoutX="110.0" layoutY="276.0" promptText="Price in SEK" />
+      <TextArea fx:id="taDescription" layoutX="31.0" layoutY="86.0" prefHeight="142.0" prefWidth="308.0" promptText="Service description" wrapText="true" />
+      <DatePicker fx:id="dpDatePicker" layoutX="110.0" layoutY="235.0" prefHeight="25.0" prefWidth="149.0" promptText="Date" />
+      <Button fx:id="btnCreateService" layoutX="85.0" layoutY="397.0" mnemonicParsing="false" onAction="#createNewCarService" prefHeight="25.0" prefWidth="200.0" text="Create service for selected car" />
+      <Label fx:id="lbInfoLabel" layoutX="31.0" layoutY="327.0" prefHeight="51.0" prefWidth="308.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="lbDateLabel" layoutX="4.0" layoutY="239.0" prefHeight="17.0" prefWidth="100.0" textFill="RED" />
+      <Button fx:id="btnGoToServiceEditView" layoutX="122.0" layoutY="437.0" mnemonicParsing="false" onAction="#goToServiceEdit" text="Back to services view" />
+      <Label layoutX="40.0" layoutY="14.0" prefHeight="45.0" prefWidth="292.0" text="Fill in the values and select which car from the list you want to be serviced" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

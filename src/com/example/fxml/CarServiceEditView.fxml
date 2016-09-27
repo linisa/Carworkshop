@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.views.CarServiceEditViewController">
+   <children>
+      <ListView fx:id="lvServiceListView" layoutY="22.0" prefHeight="578.0" prefWidth="200.0" />
+      <TextArea fx:id="taEditDescription" editable="false" layoutX="312.0" layoutY="74.0" prefHeight="144.0" prefWidth="260.0" wrapText="true" />
+      <DatePicker fx:id="dpEditDate" layoutX="312.0" layoutY="238.0" prefHeight="25.0" prefWidth="200.0" visible="false" />
+      <TextField fx:id="tfEditPrice" editable="false" layoutX="312.0" layoutY="288.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label fx:id="lbHeader" layoutX="255.0" layoutY="30.0" prefHeight="31.0" prefWidth="296.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEditService" layoutX="300.0" layoutY="367.0" mnemonicParsing="false" onAction="#updateServiceInformation" text="Edit service" />
+      <Button fx:id="btnDeleteService" layoutX="448.0" layoutY="367.0" mnemonicParsing="false" onAction="#deleteService" text="Delete service" />
+      <Label fx:id="lbInfoLabel" layoutX="282.0" layoutY="460.0" prefHeight="31.0" prefWidth="260.0" />
+      <Label layoutX="206.0" layoutY="74.0" prefHeight="17.0" prefWidth="106.0" text="Service description:" />
+      <Label layoutX="206.0" layoutY="242.0" prefHeight="17.0" prefWidth="106.0" text="Date:" />
+      <Label layoutX="206.0" layoutY="292.0" prefHeight="17.0" prefWidth="106.0" text="Price (in SEK)" />
+      <Label layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="150.0" text="Select a service:" />
+      <Button fx:id="btnGoToServiceCreateView" layoutX="343.0" layoutY="413.0" mnemonicParsing="false" onAction="#goToServiceCreateView" text="Or create a new service" />
+      <Button fx:id="btnGoToStartView" layoutX="259.0" layoutY="524.0" mnemonicParsing="false" onAction="#goToStartView" text="Go back to start" />
+      <Button fx:id="btnGoToCarEditView" layoutX="447.0" layoutY="524.0" mnemonicParsing="false" onAction="#goToCarEditView" text="Go to car view" />
+   </children>
+</AnchorPane>

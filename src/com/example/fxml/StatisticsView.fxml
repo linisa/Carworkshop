@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.views.StatisticsViewController">
+   <children>
+      <TextField fx:id="tfTotalCustomers" editable="false" layoutX="280.0" layoutY="24.0" />
+      <TextField fx:id="tfTotalCars" editable="false" layoutX="280.0" layoutY="58.0" />
+      <Label layoutX="14.0" layoutY="28.0" text="Total number of customers in database:" />
+      <Label layoutX="14.0" layoutY="62.0" text="Total number of cars in database:" />
+      <DatePicker fx:id="dpDatePicker" layoutX="280.0" layoutY="121.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="8.0" layoutY="125.0" text="Select a date:" />
+      <TextField fx:id="tfNumberOfServices" editable="false" layoutX="280.0" layoutY="208.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="tfEarnings" editable="false" layoutX="280.0" layoutY="250.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="8.0" layoutY="212.0" text="Number of services booked for selected month:" />
+      <Label layoutX="8.0" layoutY="254.0" prefHeight="17.0" prefWidth="242.0" text="Total earnings in SEK for selected month:" />
+      <Separator layoutX="-1.0" layoutY="100.0" prefHeight="1.0" prefWidth="500.0" />
+      <TextField fx:id="tfCarBrand" layoutX="14.0" layoutY="340.0" prefHeight="25.0" prefWidth="139.0" promptText="Car brand" />
+      <Separator layoutX="-1.0" layoutY="287.0" prefHeight="3.0" prefWidth="500.0" />
+      <Label layoutX="171.0" layoutY="296.0" prefHeight="17.0" prefWidth="158.0" text="Search number of cars by:" />
+      <TextField fx:id="tfCarColour" layoutX="180.0" layoutY="340.0" prefHeight="25.0" prefWidth="139.0" promptText="Car colour" />
+      <TextField fx:id="tfCarFuel" layoutX="347.0" layoutY="340.0" prefHeight="25.0" prefWidth="139.0" promptText="Car fuel" />
+      <Button fx:id="btnSearchBrand" layoutX="61.0" layoutY="383.0" mnemonicParsing="false" onAction="#getCarsByBrand" text="GO!" />
+      <Button fx:id="btnSearchColour" layoutX="237.0" layoutY="383.0" mnemonicParsing="false" onAction="#getCarsByColour" text="GO!" />
+      <Button fx:id="btnSearchFuel" layoutX="391.0" layoutY="383.0" mnemonicParsing="false" onAction="#getCarsByFuel" text="GOGO!" />
+      <TextField fx:id="tfTotalCarsByBrand" editable="false" layoutX="14.0" layoutY="451.0" prefHeight="25.0" prefWidth="139.0" />
+      <TextField fx:id="tfTotalCarsByColour" editable="false" layoutX="181.0" layoutY="451.0" prefHeight="25.0" prefWidth="139.0" />
+      <TextField fx:id="tfTotalCarsByFuel" editable="false" layoutX="348.0" layoutY="451.0" prefHeight="25.0" prefWidth="139.0" />
+   </children>
+</AnchorPane>

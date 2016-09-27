@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.views.CarCreateViewController">
+   <children>
+      <TextField fx:id="tfBrand" layoutX="95.0" layoutY="103.0" promptText="Brand" />
+      <TextField fx:id="tfRegistrationNumber" layoutX="95.0" layoutY="141.0" promptText="Registration number" />
+      <TextField fx:id="tfModel" layoutX="95.0" layoutY="177.0" promptText="Model" />
+      <TextField fx:id="tfManufacturyYear" layoutX="95.0" layoutY="211.0" promptText="Year of manufacture" />
+      <TextField fx:id="tfFuelType" layoutX="95.0" layoutY="246.0" promptText="Type of fuel" />
+      <Button fx:id="btnCreateCar" layoutX="135.0" layoutY="343.0" mnemonicParsing="false" onAction="#createNewCar" text="Create car" />
+      <Label fx:id="lbCarCreated" layoutX="16.0" layoutY="440.0" prefHeight="25.0" prefWidth="322.0" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="btnGoToCarEditView" layoutX="119.0" layoutY="395.0" mnemonicParsing="false" onAction="#goToCarEditView" text="Back to car view" />
+      <ListView fx:id="lvCustomerListView" layoutX="362.0" prefHeight="500.0" prefWidth="238.0" />
+      <TextField fx:id="tfColour" layoutX="95.0" layoutY="285.0" promptText="Colour" />
+      <Label layoutX="36.0" layoutY="26.0" prefHeight="57.0" prefWidth="304.0" text="Fill in the values and select a customer from the list which will be the owner of this car" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
