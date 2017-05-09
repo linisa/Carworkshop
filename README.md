@@ -1,3 +1,3 @@
 # Carworkshop
 
-School project for learning MySql
+School project for learning Sql
